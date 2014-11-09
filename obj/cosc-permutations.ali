@@ -1,0 +1,117 @@
+V "GNAT Lib v2014"
+A -gnatA
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U cosc.permutations%b	cosc-permutations.adb	7ab42f38 NE OO PK IU
+W ada.tags%s		a-tags.adb		a-tags.ali
+W cosc%s		cosc.adb		cosc.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.val_int%s	s-valint.adb		s-valint.ali
+
+U cosc.permutations%s	cosc-permutations.ads	6e1aa6bd EE OO PF PK IU
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.generic_array_sort%s
+W ada.containers.vectors%s
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.adb		a-finali.ali
+Z ada.iterator_interfaces%s
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+W cosc%s		cosc.adb		cosc.ali
+W system%s		system.ads		system.ali
+W system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20140406181354 3ffc8e18 ada%s
+D a-contai.ads		20140406181356 61e5e089 ada.containers%s
+D a-cgarso.ads		20140406181356 9129bfa8 ada.containers.generic_array_sort%s
+D a-convec.ads		20140406181358 0aaf3975 ada.containers.vectors%s
+D a-convec.adb		20140406181354 a022038f ada.containers.vectors%b
+D a-except.ads		20140406181356 43d57f8c ada.exceptions%s
+D a-finali.ads		20140406181358 69f99942 ada.finalization%s
+D a-iteint.ads		20140406181354 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20140406181354 1a984740 ada.streams%s
+D a-tags.ads		20140406181356 dc4d0634 ada.tags%s
+D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
+D a-uncdea.ads		20140406181358 f15a5ed1 ada.unchecked_deallocation%s
+D cosc.ads		20141023014958 f0b27b77 cosc%s
+D cosc-permutations.ads	20141023003932 9407e4bf cosc.permutations%s
+D cosc-permutations.adb	20141023003836 eeb3cb87 cosc.permutations%b
+D system.ads		20140406181358 5fc8ae56 system%s
+D s-exctab.ads		20140406181354 54135002 system.exception_table%s
+D s-finmas.ads		20140406181356 814daec4 system.finalization_masters%s
+D s-finroo.ads		20140406181358 4ff27390 system.finalization_root%s
+D s-imgint.ads		20140406181358 02dbe0c2 system.img_int%s
+D s-parame.ads		20140406181358 06da98b2 system.parameters%s
+D s-secsta.ads		20140406181358 86a2856d system.secondary_stack%s
+D s-soflin.ads		20140406181358 aa763b52 system.soft_links%s
+D s-stache.ads		20140406181354 a37c21ec system.stack_checking%s
+D s-stalib.ads		20140406181354 fa0a3617 system.standard_library%s
+D s-stoele.ads		20140406181356 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140406181354 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20140406181356 b16154c2 system.storage_pools%s
+D s-stposu.ads		20140406181354 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20140406181358 aedef97e system.stream_attributes%s
+D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
+D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
+D s-valint.ads		20140406181356 48a52a3f system.val_int%s
+X 1 ada.ads
+16K9*Ada 19e8 14|1r6 6r29
+X 2 a-contai.ads
+16K13*Containers 24e19 14|1r10 6r33
+X 4 a-convec.ads
+40I9 Index_Type 14|8r7
+41+9 Element_Type 14|7r7
+45k24*Vectors 474e27 14|1w21 6r44
+55R9*Vector<7|43R9> 14|14r116[6] 15|20r71[14|6] 35r117[14|6]
+243U14*Append 15|30s15[14|6]
+X 8 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[4|70]>
+X 13 cosc.ads
+1K9*COSC 3e9 14|3r9 15r5 15|3r14 54r5
+X 14 cosc-permutations.ads
+3K14*Permutations 13|1k9 14|15l10 15e22 15|3b19 54l10 54t22
+4I12*Nums_List_Type{positive} 8r21
+6K12*Nums_List[4|45] 14r106 15|20r61 35r107
+10A9*Int_Nums(integer)<integer> 13r30 13r78 14r66 15|11r30 11r78 20r37 35r67
+12V13*Is_Odd{boolean} 12>20 15|5b13 8l8 8t14 43s17
+12i20 I{integer} 15|5b20 7r16
+13V13*Swap{10A9} 13=19 13>40 13>48 15|11b13 18l8 18t12 48s36
+13a19 A{10A9} 15|11b19 14r15 15m7 15r25 16m7 17r14
+13i40 Source{integer} 15|11b40 15r27 16r9
+13i48 Destination{integer} 15|11b48 14r17 15r9
+14U14*Build 14>20 14=37 14=76 15|35b14 42s13 51l8 51t13
+14i20 Index{integer} 15|35b21 38r11 41r36 42r19 43r24 48r65
+14a37 Current_Permutation{10A9} 15|35b38 39r22 42m28 48m13 48m41 48r41
+14r76 List_of_permutations{4|55R9[6]} 15|35b77 39m43 42m49
+X 15 cosc-permutations.adb
+12i7 Temp{integer} 14m7 16r20
+20U14 Add_to_list 20b14 20>27 20=47 32l8 32t19 39s10
+20a27 Item{14|10A9} 23r26 23r38 26r19 26r31 27r40
+20r47 List{4|55R9[14|6]} 30m10 30r10
+23a10 Result{string} 28m13 30r36
+24a10 To_String{string} 27m13 28r26
+26i14 I{integer} 27r45 28r20
+36i7 X{integer} 44m16 46m16 48r62
+41i14 I{integer} 46r21
+

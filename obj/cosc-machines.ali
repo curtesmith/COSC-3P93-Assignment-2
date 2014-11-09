@@ -1,0 +1,130 @@
+V "GNAT Lib v2014"
+A -gnatA
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_ALLOCATORS
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+RV MAX_TASKS=1+
+
+U cosc.machines%b	cosc-machines.adb	aa699d31 NE OO PK IU
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W cosc%s		cosc.adb		cosc.ali
+W cosc.processors%s	cosc-processors.adb	cosc-processors.ali
+W system%s		system.ads		system.ali
+W system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U cosc.machines%s	cosc-machines.ads	299d3626 EE NE OO PK IU
+W cosc%s		cosc.adb		cosc.ali
+W cosc.permutations%s	cosc-permutations.adb	cosc-permutations.ali
+W cosc.processors%s	cosc-processors.adb	cosc-processors.ali
+
+D ada.ads		20140406181354 3ffc8e18 ada%s
+D a-contai.ads		20140406181356 61e5e089 ada.containers%s
+D a-coorma.ads		20140406181356 f6e6861b ada.containers.ordered_maps%s
+D a-crbltr.ads		20140406181356 b8a2dc05 ada.containers.red_black_trees%s
+D a-convec.ads		20140406181358 0aaf3975 ada.containers.vectors%s
+D a-except.ads		20140406181356 43d57f8c ada.exceptions%s
+D a-finali.ads		20140406181358 69f99942 ada.finalization%s
+D a-iteint.ads		20140406181354 7c7305e9 ada.iterator_interfaces%s
+D a-reatim.ads		20140406181358 63f07669 ada.real_time%s
+D a-stream.ads		20140406181354 1a984740 ada.streams%s
+D a-tags.ads		20140406181356 dc4d0634 ada.tags%s
+D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
+D cosc.ads		20141023014958 f0b27b77 cosc%s
+D cosc-machines.ads	20141023014732 d6bf068f cosc.machines%s
+D cosc-machines.adb	20141023014820 e74134df cosc.machines%b
+D cosc-permutations.ads	20141023003932 9407e4bf cosc.permutations%s
+D cosc-processors.ads	20141023014158 9b97af61 cosc.processors%s
+D interfac.ads		20140406181358 69adb1b9 interfaces%s
+D i-c.ads		20140406181358 5421119b interfaces.c%s
+D i-cstrin.ads		20140406181356 341d0ddf interfaces.c.strings%s
+D system.ads		20140406181358 5fc8ae56 system%s
+D s-atacco.ads		20140406181354 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20140406181354 54135002 system.exception_table%s
+D s-finmas.ads		20140406181356 814daec4 system.finalization_masters%s
+D s-finroo.ads		20140406181358 4ff27390 system.finalization_root%s
+D s-multip.ads		20140406181358 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20140406181354 ecf1fbfd system.os_interface%s
+D s-parame.ads		20140406181358 06da98b2 system.parameters%s
+D s-pooglo.ads		20140406181356 542f33d0 system.pool_global%s
+D s-secsta.ads		20140406181358 86a2856d system.secondary_stack%s
+D s-soflin.ads		20140406181358 aa763b52 system.soft_links%s
+D s-stache.ads		20140406181354 a37c21ec system.stack_checking%s
+D s-stausa.ads		20140406181354 017a0a05 system.stack_usage%s
+D s-stalib.ads		20140406181354 fa0a3617 system.standard_library%s
+D s-stoele.ads		20140406181356 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140406181354 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20140406181356 b16154c2 system.storage_pools%s
+D s-stposu.ads		20140406181354 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20140406181358 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20140406181356 601f6b72 system.task_info%s
+D s-taspri.ads		20140406181356 196697f7 system.task_primitives%s
+D s-taprop.ads		20140406181354 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20140406181354 3f821f32 system.tasking%s
+D s-tassta.ads		20140406181358 70812003 system.tasking.stages%s
+D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
+D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
+D s-win32.ads		20140406181354 b7f96285 system.win32%s
+X 3 a-coorma.ads
+53R9*Map<7|43R9> 14|5r65[17|13] 15|5r49[17|13] 6r21[17|13]
+147U14*Insert 15|9s20[17|13] 22s24[17|13] 24s24[17|13]
+149i7 Key{integer} 15|9r27[17|13] 22r31[17|13] 24r31[17|13]
+150p7 New_Item{17|6P9} 15|10r19[17|13] 23r27[17|13] 25r27[17|13]
+X 5 a-convec.ads
+55R9*Vector<7|43R9> 14|5r115[16|6] 15|5r94[16|6]
+X 8 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[3|68]>
+X 13 cosc.ads
+1K9*COSC 3e9 14|1r6 2r6 4r9 5r43 5r87 6r30 6r67 7r5 15|1r6 2r5 4r14 27r5
+X 14 cosc-machines.ads
+4K14*Machines 13|1k9 14|7l10 7e18 15|4b19 27l10 27t18
+5U14*Generate 5=24 5>70 15|5b14 17l8 17t16
+5r24 Nodes_Map{3|53R9[17|13]} 15|5b24 9m10 9r10
+5r70 List_of_IDs{5|55R9[16|6]} 15|5b54 8r19
+6U14*Connect 6>22 6>59 15|20b14 26l8 26t15
+6p22 Node1{17|6P9} 15|20b22 22r7 24r43 25r39
+6p59 Node2{17|6P9} 15|20b43 22r43 23r39 24r7
+X 15 cosc-machines.adb
+6r7 Empty{3|53R9[17|13]} 13r60
+8i11 Item{integer} 9r39 10r47
+X 16 cosc-permutations.ads
+3K14*Permutations 14|1w11 5r92 15|5r71 16|15e22
+6K12*Nums_List[5|45] 14|5r105 15|5r84
+X 17 cosc-processors.ads
+4K14*Processors 14|2w11 5r48 6r35 6r72 15|1w11 2r10 17|30e20
+5R9*Node 15|10r35 17|24e17
+6P9*Node_access(5R9) 14|6r46 6r83 15|20r30 20r51
+8T9*Node_Task 15|12r59
+9P9*Node_Task_access(8T9)
+13K12*Nodes[3|47] 14|5r59 15|5r43 6r15
+19i10*ID{integer} 15|10m41 22r49 24r49
+20i10*State{integer} 15|11m46
+21p10*Ptask{9P9} 15|12m46
+22r10*Neighbours{3|53R9[13]} 15|13m46 22m13 24m13
+23i10*ACKs{integer} 15|14m46
+X 33 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

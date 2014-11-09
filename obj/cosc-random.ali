@@ -1,0 +1,66 @@
+V "GNAT Lib v2014"
+A -gnatA
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U cosc.random%b		cosc-random.adb		01d805f0 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.calendar.conversions%s  a-calcon.adb	a-calcon.ali
+W cosc%s		cosc.adb		cosc.ali
+W system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+
+U cosc.random%s		cosc-random.ads		d99354e8 EE NE OO PK IU
+W cosc%s		cosc.adb		cosc.ali
+
+D ada.ads		20140406181354 3ffc8e18 ada%s
+D a-calend.ads		20140406181358 d86d6c8c ada.calendar%s
+D a-calcon.ads		20140406181354 81f174bf ada.calendar.conversions%s
+D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
+D cosc.ads		20141023014958 f0b27b77 cosc%s
+D cosc-random.ads	20141023002052 29212f9f cosc.random%s
+D cosc-random.adb	20141023004000 a9085ed0 cosc.random%b
+D interfac.ads		20140406181358 69adb1b9 interfaces%s
+D i-c.ads		20140406181358 5421119b interfaces.c%s
+D system.ads		20140406181358 5fc8ae56 system%s
+D s-exctab.ads		20140406181354 54135002 system.exception_table%s
+D s-fatflt.ads		20140406181356 11beb392 system.fat_flt%s
+D s-fatgen.ads		20140406181356 9267ca45 system.fat_gen%s
+D s-parame.ads		20140406181358 06da98b2 system.parameters%s
+D s-stalib.ads		20140406181354 fa0a3617 system.standard_library%s
+X 1 ada.ads
+16K9*Ada 19e8 7|1r6 37r22 37r60
+X 2 a-calend.ads
+36K13*Calendar 375e17 7|1r10 37r26 37r64
+38I9*Time<200I9>
+52V13*Clock{38I9} 7|37s73
+200I9 Time_Rep<long_long_integer>
+X 3 a-calcon.ads
+37K22*Conversions 114e29 7|1w19 37r35
+108V13*To_Unix_Time{9|37I9} 7|37s47
+X 5 cosc.ads
+1K9*COSC 3e9 6|1r9 5r5 7|4r14 50r5
+X 6 cosc-random.ads
+1K14*Random 5|1k9 6|5l10 5e16 7|4b19 50l10 50t16
+2V13*Get_Default_Seed{integer} 3s55 7|6s54 35b13 38l8 38t24 45s20
+3V13*Unif{float} 3>19 3>26 3>33 7|6b13 32l8 32t12
+3i19 seed1{integer} 7|6b18 10r12
+3i26 seed2{integer} 7|6b25 11r12
+3i33 seed3{integer} 7|6b32 12r12
+4V13*Positive_Integer{integer} 4>31 7|41b13 48l8 48t24
+4i31 Ceiling{integer} 7|41b31 45r41
+X 7 cosc-random.adb
+7f7 tmp{float} 29m7 30r14 30r37
+8i7 x{integer} 10m7 14m7 14r19 14r37 15r11 16m10 16r15 29r20
+8i10 y{integer} 11m7 19m7 19r19 19r38 20r11 21m10 21r15 29r41
+8i13 z{integer} 12m7 24m7 24r19 24r38 25r11 26m10 26r15 29r62
+42i7 Result{integer} 44r14 45m10 47r14
+X 9 i-c.ads
+37I9*long<integer>
+

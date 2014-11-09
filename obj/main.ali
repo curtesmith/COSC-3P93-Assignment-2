@@ -1,0 +1,155 @@
+V "GNAT Lib v2014"
+M P W=b
+A -gnatA
+P SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		dd53df1b NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W cosc%s		cosc.adb		cosc.ali
+W cosc.machines%s	cosc-machines.adb	cosc-machines.ali
+W cosc.permutations%s	cosc-permutations.adb	cosc-permutations.ali
+W cosc.processors%s	cosc-processors.adb	cosc-processors.ali
+W cosc.random%s		cosc-random.adb		cosc-random.ali
+W cosc.semaphores%s	cosc-semaphores.adb	cosc-semaphores.ali
+W cosc.utilities%s	cosc-utilities.adb	cosc-utilities.ali
+W system%s		system.ads		system.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+
+D ada.ads		20140406181354 3ffc8e18 ada%s
+D a-contai.ads		20140406181356 61e5e089 ada.containers%s
+D a-coorma.ads		20140406181356 f6e6861b ada.containers.ordered_maps%s
+D a-crbltr.ads		20140406181356 b8a2dc05 ada.containers.red_black_trees%s
+D a-convec.ads		20140406181358 0aaf3975 ada.containers.vectors%s
+D a-except.ads		20140406181356 43d57f8c ada.exceptions%s
+D a-finali.ads		20140406181358 69f99942 ada.finalization%s
+D a-ioexce.ads		20140406181358 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20140406181354 7c7305e9 ada.iterator_interfaces%s
+D a-reatim.ads		20140406181358 63f07669 ada.real_time%s
+D a-stream.ads		20140406181354 1a984740 ada.streams%s
+D a-tags.ads		20140406181356 dc4d0634 ada.tags%s
+D a-textio.ads		20141019220630 386df5d4 ada.text_io%s
+D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
+D cosc.ads		20141023014958 f0b27b77 cosc%s
+D cosc-machines.ads	20141023014732 d6bf068f cosc.machines%s
+D cosc-permutations.ads	20141023003932 9407e4bf cosc.permutations%s
+D cosc-processors.ads	20141023014158 9b97af61 cosc.processors%s
+D cosc-random.ads	20141023002052 29212f9f cosc.random%s
+D cosc-semaphores.ads	20141109150140 19ac5431 cosc.semaphores%s
+D cosc-utilities.ads	20141023014642 cd08fc55 cosc.utilities%s
+D interfac.ads		20140406181358 69adb1b9 interfaces%s
+D i-c.ads		20140406181358 5421119b interfaces.c%s
+D i-cstrin.ads		20140406181356 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20140406181356 febc86ed interfaces.c_streams%s
+D main.adb		20141109150024 c194e065 main%b
+D system.ads		20140406181358 5fc8ae56 system%s
+D s-atacco.ads		20140406181354 4c36d12f system.address_to_access_conversions%s
+D s-conca3.ads		20140406181354 0b705ca5 system.concat_3%s
+D s-crtl.ads		20140406181356 2c012597 system.crtl%s
+D s-exctab.ads		20140406181354 54135002 system.exception_table%s
+D s-ficobl.ads		20140406181354 078245e4 system.file_control_block%s
+D s-finmas.ads		20140406181356 814daec4 system.finalization_masters%s
+D s-finroo.ads		20140406181358 4ff27390 system.finalization_root%s
+D s-imgint.ads		20140406181358 02dbe0c2 system.img_int%s
+D s-multip.ads		20140406181358 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20140406181354 ecf1fbfd system.os_interface%s
+D s-parame.ads		20140406181358 06da98b2 system.parameters%s
+D s-pooglo.ads		20140406181356 542f33d0 system.pool_global%s
+D s-secsta.ads		20140406181358 86a2856d system.secondary_stack%s
+D s-soflin.ads		20140406181358 aa763b52 system.soft_links%s
+D s-stache.ads		20140406181354 a37c21ec system.stack_checking%s
+D s-stausa.ads		20140406181354 017a0a05 system.stack_usage%s
+D s-stalib.ads		20140406181354 fa0a3617 system.standard_library%s
+D s-stoele.ads		20140406181356 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140406181354 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20140406181356 b16154c2 system.storage_pools%s
+D s-stposu.ads		20140406181354 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20140406181358 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20140406181356 601f6b72 system.task_info%s
+D s-taspri.ads		20140406181356 196697f7 system.task_primitives%s
+D s-taprop.ads		20140406181354 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20140406181354 3f821f32 system.tasking%s
+D s-taprob.ads		20140406181354 502249e3 system.tasking.protected_objects%s
+D s-tpoben.ads		20140406181356 b641f948 system.tasking.protected_objects.entries%s
+D s-tasren.ads		20140406181358 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20140406181358 70812003 system.tasking.stages%s
+D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
+D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
+D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
+D s-win32.ads		20140406181354 b7f96285 system.win32%s
+X 1 ada.ads
+16K9*Ada 19e8 26|1r6 28r4 30r7 33r4
+X 2 a-contai.ads
+20I9*Count_Type<integer>
+X 3 a-coorma.ads
+53R9*Map<7|43R9> 26|10r34[18|13]
+X 5 a-convec.ads
+55R9*Vector<7|43R9> 26|13r38[17|6]
+97V13*Length{2|20I9} 26|23s64[17|6]
+X 9 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[3|68]>
+X 13 a-textio.ads
+49K13*Text_IO 471e16 26|1w10 28r8 30r11 33r8
+263U14*Put_Line 26|28s16 30s19 33s16
+X 15 cosc.ads
+1K9*COSC 3e9 26|2r6 3r6 4r6 5r6 6r6 7r6 10r12 12r24 13r10 16r4 19r4 20r4
+. 23r23
+X 16 cosc-machines.ads
+4K14*Machines 7e18 26|5w11 19r9
+5U14*Generate 26|19s18
+X 17 cosc-permutations.ads
+3K14*Permutations 15e22 26|4w11 12r29 13r15 16r9
+6K12*Nums_List[5|45] 26|13r28
+10A9*Int_Nums(integer)<integer> 26|12r42
+14U14*Build 26|16s22
+X 18 cosc-processors.ads
+4K14*Processors 30e20 26|2w11 10r17
+6P9*Node_access(5R9)
+9P9*Node_Task_access(8T9)
+13K12*Nodes[3|47] 26|10r28
+19i10*ID{integer} 26|30r47
+21p10*Ptask{9P9} 26|24r23 25r23
+23i10*ACKs{integer} 26|30r80
+27Y13 RESET 26|24s29
+28Y13 ACK 26|25s29
+X 19 cosc-random.ads
+1K14*Random 5e16 26|6w11 23r28
+4V13*Positive_Integer{integer} 26|23s35
+X 20 cosc-semaphores.ads
+1K14*Semaphores 6e20 26|7w11
+X 21 cosc-utilities.ads
+3K14*Utilities 5e19 26|3w11 20r9
+4U14*Make_Connections 26|20s19
+X 26 main.adb
+9U11*Main 9b11 34l5 34t9
+10r4 Nodes{3|53R9[18|13]} 19m27 19r27 20m36 20r36 24r4 24r35 25r4 25r33 29r16
+11i4 Factorial{integer} 16r28 20r43
+12a4 Factorial_numbers{17|10A9} 16m39 16r39
+13r4 IDs{5|55R9[17|6]} 16m58 16r58 19r34 23r19 23r60
+14i4 Start_index{integer} 23m4 24r10 24r41 25r10 25r39
+29p8 Node{18|6P9} 30r42 30r75
+X 43 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+
