@@ -12,7 +12,7 @@ RV SPARK_05
 RV MAX_SELECT_ALTERNATIVES=1
 RV MAX_TASK_ENTRIES=2
 
-U cosc.semaphores%b	cosc-semaphores.adb	8a5fe5bc OO PK IU
+U cosc.semaphores%b	cosc-semaphores.adb	e7fe728b OO PK IU
 W ada.tags%s		a-tags.adb		a-tags.ali
 W cosc%s		cosc.adb		cosc.ali
 W system%s		system.ads		system.ali
@@ -21,7 +21,7 @@ W system.tasking%s	s-taskin.adb		s-taskin.ali
 W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
 W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
-U cosc.semaphores%s	cosc-semaphores.ads	e91e2f46 EE NE OO PK IU
+U cosc.semaphores%s	cosc-semaphores.ads	e44537c1 EE NE OO PK IU
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W cosc%s		cosc.adb		cosc.ali
 W system%s		system.ads		system.ali
@@ -38,8 +38,8 @@ D a-stream.ads		20140406181354 1a984740 ada.streams%s
 D a-tags.ads		20140406181356 dc4d0634 ada.tags%s
 D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
 D cosc.ads		20141023014958 f0b27b77 cosc%s
-D cosc-semaphores.ads	20141109150140 19ac5431 cosc.semaphores%s
-D cosc-semaphores.adb	20141109150402 93f3b18d cosc.semaphores%b
+D cosc-semaphores.ads	20141109160200 14f74cb6 cosc.semaphores%s
+D cosc-semaphores.adb	20141109160158 f3093e3d cosc.semaphores%b
 D interfac.ads		20140406181358 69adb1b9 interfaces%s
 D i-c.ads		20140406181358 5421119b interfaces.c%s
 D i-cstrin.ads		20140406181356 341d0ddf interfaces.c.strings%s
@@ -74,9 +74,10 @@ X 8 cosc.ads
 1K9*COSC 3e9 9|1r9 6r5 10|1r14 13r5
 X 9 cosc-semaphores.ads
 1K14*Semaphores 8|1k9 9|6l10 6e20 10|1b19 13l10 13t20
-2T14*SEMAPHORE 5l8 5e17 10|2b14 11l8 11t17
-3Y10 WAIT 10|8b20
-4Y10 SIGNAL 10|7b20
+2T14*SEMAPHORE 2d25 5l8 5e17 10|2b14 11l8 11t17
+2i25 INITVALUE{integer} 10|3r26
+3Y15 WAIT 10|8b20
+4Y15 SIGNAL 10|7b20
 X 10 cosc-semaphores.adb
 3i7 COUNT{integer}
 X 25 s-stausa.ads

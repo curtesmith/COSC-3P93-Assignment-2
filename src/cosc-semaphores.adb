@@ -1,6 +1,6 @@
 package body COSC.Semaphores is
    task body SEMAPHORE is
-      COUNT : Integer := 0;
+      COUNT : Integer := INITVALUE;
    begin
       loop
          select
