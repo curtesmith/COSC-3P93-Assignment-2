@@ -18,7 +18,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 RV MAX_TASKS=1+
 
-U cosc.machines%b	cosc-machines.adb	aa699d31 NE OO PK IU
+U cosc.machines%b	cosc-machines.adb	da778037 NE OO PK IU
 W ada.exceptions%s	a-except.adb		a-except.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W cosc%s		cosc.adb		cosc.ali
@@ -34,7 +34,7 @@ W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
 W system.tasking%s	s-taskin.adb		s-taskin.ali
 W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
-U cosc.machines%s	cosc-machines.ads	299d3626 EE NE OO PK IU
+U cosc.machines%s	cosc-machines.ads	59832b20 EE NE OO PK IU
 W cosc%s		cosc.adb		cosc.ali
 W cosc.permutations%s	cosc-permutations.adb	cosc-permutations.ali
 W cosc.processors%s	cosc-processors.adb	cosc-processors.ali
@@ -55,7 +55,7 @@ D cosc.ads		20141023014958 f0b27b77 cosc%s
 D cosc-machines.ads	20141023014732 d6bf068f cosc.machines%s
 D cosc-machines.adb	20141023014820 e74134df cosc.machines%b
 D cosc-permutations.ads	20141023003932 9407e4bf cosc.permutations%s
-D cosc-processors.ads	20141023014158 9b97af61 cosc.processors%s
+D cosc-processors.ads	20141109192808 eb89b267 cosc.processors%s
 D interfac.ads		20140406181358 69adb1b9 interfaces%s
 D i-c.ads		20140406181358 5421119b interfaces.c%s
 D i-cstrin.ads		20140406181356 341d0ddf interfaces.c.strings%s

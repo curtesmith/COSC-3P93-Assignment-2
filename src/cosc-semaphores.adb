@@ -5,7 +5,9 @@ package body COSC.Semaphores is
       loop
          select
             accept SIGNAL;
-            accept WAIT;
+            COUNT := COUNT + 1;
+         or when COUNT > 0 => accept WAIT;
+               COUNT := COUNT -1;
          end select;
       end loop;
    end SEMAPHORE;

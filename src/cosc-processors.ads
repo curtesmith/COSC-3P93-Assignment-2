@@ -25,6 +25,6 @@ package COSC.Processors is
 
    task type Node_Task is
       entry RESET (Self: Node_access; Caller : Integer);
-      entry ACK (Self : Node_access);
+      entry ACK;
    end Node_Task;
 end COSC.Processors;
