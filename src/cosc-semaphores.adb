@@ -8,6 +8,8 @@ package body COSC.Semaphores is
             COUNT := COUNT + 1;
          or when COUNT > 0 => accept WAIT;
                COUNT := COUNT -1;
+         or
+              terminate;
          end select;
       end loop;
    end SEMAPHORE;

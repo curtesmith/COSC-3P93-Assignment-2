@@ -1,4 +1,5 @@
 with Ada.Containers.Ordered_Maps;
+with COSC.Semaphores;
 
 
 package COSC.Processors is
@@ -24,7 +25,7 @@ package COSC.Processors is
       end record;
 
    task type Node_Task is
-      entry RESET (Self: Node_access; Caller : Integer);
+      entry RESET (Self: Node_access; Caller : Integer; Done : COSC.Semaphores.SEMAPHORE_access);
       entry ACK;
    end Node_Task;
 end COSC.Processors;

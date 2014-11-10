@@ -22,7 +22,7 @@ W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W system.soft_links%s	s-soflin.adb		s-soflin.ali
 W system.val_int%s	s-valint.adb		s-valint.ali
 
-U cosc.utilities%s	cosc-utilities.ads	32298184 EE NE OO PK IU
+U cosc.utilities%s	cosc-utilities.ads	a3e6c49b EE NE OO PK IU
 W cosc%s		cosc.adb		cosc.ali
 W cosc.processors%s	cosc-processors.adb	cosc-processors.ali
 
@@ -41,7 +41,8 @@ D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
 D cosc.ads		20141109232606 14a8cfb6 cosc%s
 D cosc-machines.ads	20141023014732 d6bf068f cosc.machines%s
 D cosc-permutations.ads	20141023003932 9407e4bf cosc.permutations%s
-D cosc-processors.ads	20141109192808 eb89b267 cosc.processors%s
+D cosc-processors.ads	20141110005726 7a46f778 cosc.processors%s
+D cosc-semaphores.ads	20141110005714 3de28a7c cosc.semaphores%s
 D cosc-utilities.ads	20141023014642 cd08fc55 cosc.utilities%s
 D cosc-utilities.adb	20141023014640 2525b109 cosc.utilities%b
 D interfac.ads		20140406181358 69adb1b9 interfaces%s
@@ -77,35 +78,35 @@ D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
 D s-valint.ads		20140406181356 48a52a3f system.val_int%s
 D s-win32.ads		20140406181354 b7f96285 system.win32%s
 X 3 a-coorma.ads
-53R9*Map<7|43R9> 17|4r72[16|13] 18|5r72[16|13]
-200V13*Contains{boolean} 18|18s33[16|13]
+53R9*Map<7|43R9> 18|4r72[16|14] 19|5r72[16|14]
+200V13*Contains{boolean} 19|18s33[16|14]
 X 8 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[3|68]>
 X 13 cosc.ads
-1K9*COSC 4e9 17|1r6 3r9 4r50 5r5 18|1r6 3r14 5r50 19r20 26r5
+1K9*COSC 4e9 18|1r6 3r9 4r50 5r5 19|1r6 3r14 5r50 19r20 26r5
 X 14 cosc-machines.ads
-4K14*Machines 7e18 18|1w11 19r25
-6U14*Connect 18|19s34
+4K14*Machines 7e18 19|1w11 19r25
+6U14*Connect 19|19s34
 X 16 cosc-processors.ads
-4K14*Processors 30e20 17|1w11 4r55 18|5r55
-6P9*Node_access(5R9)
-13K12*Nodes[3|47] 17|4r66 18|5r66
-19i10*ID{integer} 18|12r35 19r57
-22r10*Neighbours{3|53R9[13]} 18|18r22
-X 17 cosc-utilities.ads
-3K14*Utilities 13|1k9 17|5l10 5e19 18|3b19 26l10 26t19
-4U14*Make_Connections 4=31 4>77 18|5b14 24l8 24t24
-4r31 Nodes_Map{3|53R9[16|13]} 18|5b31 11r19 19r42 19r62
-4i77 Factorial{integer} 18|5b77 7r23 8r26 14r22
-X 18 cosc-utilities.adb
+5K14*Processors 31e20 18|1w11 4r55 19|5r55
+7P9*Node_access(6R9)
+14K12*Nodes[3|47] 18|4r66 19|5r66
+20i10*ID{integer} 19|12r35 19r57
+23r10*Neighbours{3|53R9[14]} 19|18r22
+X 18 cosc-utilities.ads
+3K14*Utilities 13|1k9 18|5l10 5e19 19|3b19 26l10 26t19
+4U14*Make_Connections 4=31 4>77 19|5b14 24l8 24t24
+4r31 Nodes_Map{3|53R9[16|14]} 19|5b31 11r19 19r42 19r62
+4i77 Factorial{integer} 19|5b77 7r23 8r26 14r22
+X 19 cosc-utilities.adb
 6i7 Number_of_connections{integer}
 7a7 ID{string} 12m10 13r24 15r22 16r25
 8a7 NewID{string} 15m13 16m13 17m13 18r56 19r86
 9e7 First_char{character} 13m10 17r25
-11p11 Node{16|6P9} 12r30 18r17 19r52
+11p11 Node{16|7P9} 12r30 18r17 19r52
 14i14 I{integer} 16r28 17r19
-X 35 s-stausa.ads
+X 36 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
 

@@ -1,19 +1,26 @@
+with COSC.Semaphores;
+
+use COSC.Semaphores;
+
 package body COSC.Processors is
 
    task body Node_Task is
       State, Caller_ID, Expected_ACKs : Integer := 0;
       Me, Callback_Node : Node_access := null;
+      Are_we_done : COSC.Semaphores.SEMAPHORE_access := null;
    begin
       loop
          select
             when State = 0 =>
-               accept RESET(Self : Node_access; Caller : Integer) do
+               accept RESET(Self : Node_access; Caller : Integer; Done : COSC.Semaphores.SEMAPHORE_access) do
                   Me := Self;
                   Caller_ID := Caller;
                   Me.State := 1; -- Reset in progress
+                  State := Me.State;
+                  Are_we_done := Done;
                end RESET;
 
-               COSC.Write("NODE#" & COSC.To_String(Me.ID) & ": RESET called");
+               COSC.Write("NODE#" & COSC.To_String(Me.ID) & ": RESET called by " & COSC.To_String(Caller_ID));
 
                for Node of Me.Neighbours loop
                   if (Node.ID = Caller_ID) then
@@ -21,7 +28,7 @@ package body COSC.Processors is
                   end if;
 
                   if (Node.State = 0 and Node.ID /= Caller_ID) then
-                     Node.Ptask.RESET(Node, Me.ID);
+                     Node.Ptask.RESET(Node, Me.ID, null);
                      Expected_ACKs := Expected_ACKs + 1;
                   end if;
                end loop;
@@ -32,6 +39,9 @@ package body COSC.Processors is
                   Callback_Node.Ptask.ACK;
                   COSC.Write("NODE#" & COSC.To_String(Me.ID) & ": " & COSC.To_String(Caller_ID)
                              & " got acked");
+               elsif (Expected_ACKs = 0 and Are_we_done /= null) then
+                  COSC.Write("Node#" & COSC.To_String(Me.ID) & " signal no acks");
+                  Are_we_done.SIGNAL;
                end if;
 
          or accept ACK do
@@ -40,6 +50,11 @@ package body COSC.Processors is
             end ACK;
 
             if (Me.ACKs = Expected_ACKs) then
+               if(Are_we_done /= null) then
+                  COSC.Write("Node#" & COSC.To_String(Me.ID) & " signal");
+                  Are_we_done.SIGNAL;
+               end if;
+
                COSC.Write("Node#" & COSC.To_String(Me.ID) & ": ACK needs to Callback#" & COSC.To_String(Callback_Node.ID));
                Callback_Node.Ptask.ACK;
                COSC.Write("Node#" & COSC.To_String(Me.ID) & ": ACK Callback done to #" & COSC.To_String(Callback_Node.ID));

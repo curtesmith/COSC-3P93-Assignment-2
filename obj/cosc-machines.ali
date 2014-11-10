@@ -18,7 +18,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 RV MAX_TASKS=1+
 
-U cosc.machines%b	cosc-machines.adb	da778037 NE OO PK IU
+U cosc.machines%b	cosc-machines.adb	4bb8c528 NE OO PK IU
 W ada.exceptions%s	a-except.adb		a-except.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W cosc%s		cosc.adb		cosc.ali
@@ -34,7 +34,7 @@ W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
 W system.tasking%s	s-taskin.adb		s-taskin.ali
 W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
-U cosc.machines%s	cosc-machines.ads	bd999fe1 EE NE OO PK IU
+U cosc.machines%s	cosc-machines.ads	2c56dafe EE NE OO PK IU
 W cosc%s		cosc.adb		cosc.ali
 W cosc.permutations%s	cosc-permutations.adb	cosc-permutations.ali
 W cosc.processors%s	cosc-processors.adb	cosc-processors.ali
@@ -55,7 +55,8 @@ D cosc.ads		20141109232606 14a8cfb6 cosc%s
 D cosc-machines.ads	20141023014732 d6bf068f cosc.machines%s
 D cosc-machines.adb	20141023014820 e74134df cosc.machines%b
 D cosc-permutations.ads	20141023003932 9407e4bf cosc.permutations%s
-D cosc-processors.ads	20141109192808 eb89b267 cosc.processors%s
+D cosc-processors.ads	20141110005726 7a46f778 cosc.processors%s
+D cosc-semaphores.ads	20141110005714 3de28a7c cosc.semaphores%s
 D interfac.ads		20140406181358 69adb1b9 interfaces%s
 D i-c.ads		20140406181358 5421119b interfaces.c%s
 D i-cstrin.ads		20140406181356 341d0ddf interfaces.c.strings%s
@@ -87,10 +88,10 @@ D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
 D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
 D s-win32.ads		20140406181354 b7f96285 system.win32%s
 X 3 a-coorma.ads
-53R9*Map<7|43R9> 14|5r65[17|13] 15|5r49[17|13] 6r21[17|13]
-147U14*Insert 15|9s20[17|13] 22s24[17|13] 24s24[17|13]
-149i7 Key{integer} 15|9r27[17|13] 22r31[17|13] 24r31[17|13]
-150p7 New_Item{17|6P9} 15|10r19[17|13] 23r27[17|13] 25r27[17|13]
+53R9*Map<7|43R9> 14|5r65[17|14] 15|5r49[17|14] 6r21[17|14]
+147U14*Insert 15|9s20[17|14] 22s24[17|14] 24s24[17|14]
+149i7 Key{integer} 15|9r27[17|14] 22r31[17|14] 24r31[17|14]
+150p7 New_Item{17|7P9} 15|10r19[17|14] 23r27[17|14] 25r27[17|14]
 X 5 a-convec.ads
 55R9*Vector<7|43R9> 14|5r115[16|6] 15|5r94[16|6]
 X 8 a-iteint.ads
@@ -101,30 +102,30 @@ X 13 cosc.ads
 X 14 cosc-machines.ads
 4K14*Machines 13|1k9 14|7l10 7e18 15|4b19 27l10 27t18
 5U14*Generate 5=24 5>70 15|5b14 17l8 17t16
-5r24 Nodes_Map{3|53R9[17|13]} 15|5b24 9m10 9r10
+5r24 Nodes_Map{3|53R9[17|14]} 15|5b24 9m10 9r10
 5r70 List_of_IDs{5|55R9[16|6]} 15|5b54 8r19
 6U14*Connect 6>22 6>59 15|20b14 26l8 26t15
-6p22 Node1{17|6P9} 15|20b22 22r7 24r43 25r39
-6p59 Node2{17|6P9} 15|20b43 22r43 23r39 24r7
+6p22 Node1{17|7P9} 15|20b22 22r7 24r43 25r39
+6p59 Node2{17|7P9} 15|20b43 22r43 23r39 24r7
 X 15 cosc-machines.adb
-6r7 Empty{3|53R9[17|13]} 13r60
+6r7 Empty{3|53R9[17|14]} 13r60
 8i11 Item{integer} 9r39 10r47
 X 16 cosc-permutations.ads
 3K14*Permutations 14|1w11 5r92 15|5r71 16|15e22
 6K12*Nums_List[5|45] 14|5r105 15|5r84
 X 17 cosc-processors.ads
-4K14*Processors 14|2w11 5r48 6r35 6r72 15|1w11 2r10 17|30e20
-5R9*Node 15|10r35 17|24e17
-6P9*Node_access(5R9) 14|6r46 6r83 15|20r30 20r51
-8T9*Node_Task 15|12r59
-9P9*Node_Task_access(8T9)
-13K12*Nodes[3|47] 14|5r59 15|5r43 6r15
-19i10*ID{integer} 15|10m41 22r49 24r49
-20i10*State{integer} 15|11m46
-21p10*Ptask{9P9} 15|12m46
-22r10*Neighbours{3|53R9[13]} 15|13m46 22m13 24m13
-23i10*ACKs{integer} 15|14m46
-X 33 s-stausa.ads
+5K14*Processors 14|2w11 5r48 6r35 6r72 15|1w11 2r10 17|31e20
+6R9*Node 15|10r35 17|25e17
+7P9*Node_access(6R9) 14|6r46 6r83 15|20r30 20r51
+9T9*Node_Task 15|12r59
+10P9*Node_Task_access(9T9)
+14K12*Nodes[3|47] 14|5r59 15|5r43 6r15
+20i10*ID{integer} 15|10m41 22r49 24r49
+21i10*State{integer} 15|11m46
+22p10*Ptask{10P9} 15|12m46
+23r10*Neighbours{3|53R9[14]} 15|13m46 22m13 24m13
+24i10*ACKs{integer} 15|14m46
+X 34 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
 
