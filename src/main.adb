@@ -8,7 +8,7 @@ with COSC.Semaphores;
 
 procedure Main is
    Nodes : COSC.Processors.Nodes.Map;
-   Factorial_numbers : COSC.Permutations.Int_Nums := (3,2,1);
+   Factorial_numbers : COSC.Permutations.Int_Nums := (5,4,3,2,1);
    IDs : COSC.Permutations.Nums_List.Vector;
    First, Second : Integer := 0;
    --DONE : COSC.Semaphores.SEMAPHORE (INITVALUE => -1);
@@ -27,10 +27,10 @@ begin
       Second := IDs(COSC.Random.Positive_Integer(Integer(IDs.Length)));
    end loop;
 
-   COSC.Write("MAIN: Calling Reset on " & COSC.To_String(First));
-   Nodes(First).Ptask.RESET(Nodes(First), -1, DONE_access);
-   COSC.Write("MAIN: Calling Reset on " & COSC.To_String(Second));
-   Nodes(Second).Ptask.RESET(Nodes(Second), -1, DONE_access);
+   COSC.Write("MAIN: Calling Reset on " & COSC.To_String(12345));
+   Nodes(12345).Ptask.RESET(Nodes(12345), -1, DONE_access);
+   COSC.Write("MAIN: Calling Reset on " & COSC.To_String(15234));
+   Nodes(15234).Ptask.RESET(Nodes(15234), -1, DONE_access);
 
    DONE_access.WAIT;
 

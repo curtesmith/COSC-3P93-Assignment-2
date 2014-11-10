@@ -19,7 +19,7 @@ RV SPARK_05
 RV MAX_SELECT_ALTERNATIVES=3
 RV MAX_TASK_ENTRIES=2
 
-U cosc.processors%b	cosc-processors.adb	e37bf712 OO PK IU
+U cosc.processors%b	cosc-processors.adb	a7125d8c OO PK IU
 W ada.exceptions%s	a-except.adb		a-except.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W cosc%s		cosc.adb		cosc.ali
@@ -84,7 +84,7 @@ D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
 D a-uncdea.ads		20140406181358 f15a5ed1 ada.unchecked_deallocation%s
 D cosc.ads		20141109232606 14a8cfb6 cosc%s
 D cosc-processors.ads	20141110005726 7a46f778 cosc.processors%s
-D cosc-processors.adb	20141110015152 a4df8a16 cosc.processors%b
+D cosc-processors.adb	20141110022330 e0b62088 cosc.processors%b
 D cosc-semaphores.ads	20141110005714 3de28a7c cosc.semaphores%s
 D interfac.ads		20140406181358 69adb1b9 interfaces%s
 D i-c.ads		20140406181358 5421119b interfaces.c%s
@@ -134,60 +134,60 @@ X 3 a-coorma.ads
 240R9 Node_Type
 241P9 Node_Access(240R9)
 X 4 a-coorma.adb
-49V13 Color{5|35E9} 8|45i19[19|14]
-52V13 Left{3|241P9[19|14]} 8|41i19[19|14]
-55V13 Parent{3|241P9} 8|39i19
-58V13 Right{3|241P9[19|14]} 8|43i19[19|14]
+49V13 Color{5|35E9} 8|45i19
+52V13 Left{3|241P9} 8|41i19
+55V13 Parent{3|241P9[19|14]} 8|39i19[19|14]
+58V13 Right{3|241P9} 8|43i19
 61U14 Set_Parent 8|40i19
 64U14 Set_Left 8|42i19[19|14]
-67U14 Set_Right 8|44i19
-70U14 Set_Color 8|46i19
+67U14 Set_Right 8|44i19[19|14]
+70U14 Set_Color 8|46i19[19|14]
 X 12 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[3|68]>
 X 18 cosc.ads
-1K9*COSC 4e9 19|2r6 5r9 28r64 31r5 20|1r6 3r5 5r14 10r21 15r74 23r16 23r37
-. 23r84 37r19 37r40 38r32 40r19 40r40 40r71 43r19 43r40 48r16 48r37 54r19
-. 54r40 58r16 58r37 58r90 60r16 60r37 60r90 69r5
-2U14*Write 20|23s21 37s24 40s24 43s24 48s21 54s24 58s21 60s21
-3V13*To_String{string} 20|23s42 23s89 37s45 38s37 40s45 40s76 43s45 48s42
-. 54s45 58s42 58s95 60s42 60s95
+1K9*COSC 4e9 19|2r6 5r9 28r64 31r5 20|1r6 3r5 5r14 10r21 14r71 22r13 22r34
+. 22r81 36r16 36r37 37r29 39r16 39r37 39r68 42r16 42r37 47r16 47r37 53r19
+. 53r40 57r16 57r37 57r90 59r16 59r37 59r90 68r5
+2U14*Write 20|22s18 36s21 39s21 42s21 47s21 53s24 57s21 59s21
+3V13*To_String{string} 20|22s39 22s86 36s42 37s34 39s42 39s73 42s42 47s42
+. 53s45 57s42 57s95 59s42 59s95
 X 19 cosc-processors.ads
-5K14*Processors 18|1k9 19|31l10 31e20 20|5b19 69l10 69t20
+5K14*Processors 18|1k9 19|31l10 31e20 20|5b19 68l10 68t20
 6R9*Node 7r35 18c9 25e17
-7P9*Node_access(6R9) 16r24 28r26 20|9r27 15r36
+7P9*Node_access(6R9) 16r24 28r26 20|9r27 14r33
 9T9*Node_Task 10r36
 10P9*Node_Task_access(9T9) 22r18
 12I12*Node_IDs{positive} 15r24
 14K12*Nodes[3|47] 23r23
-20i10*ID{integer} 20|23r55 26r28 30r47 31m48 37r58 40r58 43r58 48r55 54r58
-. 58r55 58r119 60r55 60r119
-21i10*State{integer} 20|18m22 19r31 30r28
-22p10*Ptask{10P9} 20|31r27 39r33 59r30
-23r10*Neighbours{3|53R9[14]} 20|25r31
-24i10*ACKs{integer} 20|49m19 49r30 52r20
-27T14*Node_Task 30l8 30e17 20|7b14 67l8 67t17
-28Y13 RESET 28>20 28>39 28>57 20|15b23 21l20 21t25 31s33
-28p20 Self{7P9} 20|16r25
-28i39 Caller{integer} 20|17r32
-28p57 Done{21|9P9} 20|20r34
-29Y13 ACK 20|39s39 47b20 50l17 50t20 59s36
+20i10*ID{integer} 20|22r52 25r25 29r44 30m45 36r55 39r55 42r55 47r55 53r58
+. 57r55 57r119 59r55 59r119
+21i10*State{integer} 20|17m19 18r28 29r25
+22p10*Ptask{10P9} 20|30r24 38r30 58r30
+23r10*Neighbours{3|53R9[14]} 20|24r28
+24i10*ACKs{integer} 20|48m19 48r30 51r20
+27T14*Node_Task 30l8 30e17 20|7b14 66l8 66t17
+28Y13 RESET 28>20 28>39 28>57 20|14b20 20l17 20t22 30s30
+28p20 Self{7P9} 20|15r22
+28i39 Caller{integer} 20|16r29
+28p57 Done{21|9P9} 20|19r31
+29Y13 ACK 20|38s36 46b20 49l17 49t20 58s36
 X 20 cosc-processors.adb
-8i7 State{integer} 14r18 19m19
-8i14 Caller_ID{integer} 17m19 23r99 26r33 30r53 36r42 38r47 40r86
-8i25 Expected_ACKs{integer} 32m22 32r39 36r20 42r23 52r27
-9p7 Me{19|7P9} 16m19 18r19 19r28 23r52 25r28 31r45 37r55 40r55 43r55 48r52
-. 49r16 49r27 52r17 54r55 58r52 60r52
-9p11 Callback_Node{19|7P9} 27m22 39r19 58r105 59r16 60r105
-10p7 Are_we_done{21|9P9} 20m19 42r45 44r19 53r19 55r19
-15p29 Self{19|7P9}
-15i49 Caller{integer}
-15p67 Done{21|9P9}
-25p20 Node{19|7P9} 26r23 27r39 30r23 30r42 31r22 31r39
+8i7 State{integer} 18m16
+8i14 Caller_ID{integer} 16m16 22r96 25r30 29r50 35r39 37r44 39r83
+8i25 Expected_ACKs{integer} 31m19 31r36 35r17 41r20 51r27
+9p7 Me{19|7P9} 15m16 17r16 18r25 22r49 24r25 30r42 36r52 39r52 42r52 47r52
+. 48r16 48r27 51r17 53r55 57r52 59r52
+9p11 Callback_Node{19|7P9} 26m19 38r16 57r105 58r16 59r105
+10p7 Are_we_done{21|9P9} 19m16 41r42 43r16 52r19 54r19
+14p26 Self{19|7P9}
+14i46 Caller{integer}
+14p64 Done{21|9P9}
+24p17 Node{19|7P9} 25r20 26r36 29r20 29r39 30r19 30r36
 X 21 cosc-semaphores.ads
-1K14*Semaphores 19|2w11 28r69 20|1w11 3r10 10r26 15r79 21|10e20
-6Y15 SIGNAL 20|44s31 55s31
-9P9*SEMAPHORE_access(4T14) 19|28r80 20|10r37 15r90
+1K14*Semaphores 19|2w11 28r69 20|1w11 3r10 10r26 14r76 21|10e20
+6Y15 SIGNAL 20|43s28 54s31
+9P9*SEMAPHORE_access(4T14) 19|28r80 20|10r37 14r87
 X 40 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
