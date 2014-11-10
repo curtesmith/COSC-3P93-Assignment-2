@@ -21,7 +21,7 @@ W system.tasking%s	s-taskin.adb		s-taskin.ali
 W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
 W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
-U cosc.semaphores%s	cosc-semaphores.ads	e44537c1 EE NE OO PK IU
+U cosc.semaphores%s	cosc-semaphores.ads	005f8300 EE NE OO PK IU
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W cosc%s		cosc.adb		cosc.ali
 W system%s		system.ads		system.ali
@@ -37,7 +37,7 @@ D a-reatim.ads		20140406181358 63f07669 ada.real_time%s
 D a-stream.ads		20140406181354 1a984740 ada.streams%s
 D a-tags.ads		20140406181356 dc4d0634 ada.tags%s
 D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
-D cosc.ads		20141023014958 f0b27b77 cosc%s
+D cosc.ads		20141109232606 14a8cfb6 cosc%s
 D cosc-semaphores.ads	20141109160200 14f74cb6 cosc.semaphores%s
 D cosc-semaphores.adb	20141109162914 ff9e7f02 cosc.semaphores%b
 D interfac.ads		20140406181358 69adb1b9 interfaces%s
@@ -71,7 +71,7 @@ D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
 D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
 D s-win32.ads		20140406181354 b7f96285 system.win32%s
 X 8 cosc.ads
-1K9*COSC 3e9 9|1r9 6r5 10|1r14 15r5
+1K9*COSC 4e9 9|1r9 6r5 10|1r14 15r5
 X 9 cosc-semaphores.ads
 1K14*Semaphores 8|1k9 9|6l10 6e20 10|1b19 15l10 15t20
 2T14*SEMAPHORE 2d25 5l8 5e17 10|2b14 13l8 13t17

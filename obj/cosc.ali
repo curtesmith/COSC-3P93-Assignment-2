@@ -1,16 +1,20 @@
 V "GNAT Lib v2014"
 A -gnatA
-P ZX
+P SS ZX
 
 RN
 RV NO_IO
+RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
 
-U cosc%b		cosc.adb		eb069799 NE OO PK IU
+U cosc%b		cosc.adb		497cde9e NE OO PK IU
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-U cosc%s		cosc.ads		f0b27b77 EE NE OO PK IU
+U cosc%s		cosc.ads		14a8cfb6 EE NE OO PK IU
 
 D ada.ads		20140406181354 3ffc8e18 ada%s
 D a-except.ads		20140406181356 43d57f8c ada.exceptions%s
@@ -20,8 +24,8 @@ D a-stream.ads		20140406181354 1a984740 ada.streams%s
 D a-tags.ads		20140406181356 dc4d0634 ada.tags%s
 D a-textio.ads		20141019220630 386df5d4 ada.text_io%s
 D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
-D cosc.ads		20141023014958 f0b27b77 cosc%s
-D cosc.adb		20141023015028 23d9193a cosc%b
+D cosc.ads		20141109232606 14a8cfb6 cosc%s
+D cosc.adb		20141109232622 65b9e4fc cosc%b
 D interfac.ads		20140406181358 69adb1b9 interfaces%s
 D i-cstrea.ads		20140406181356 febc86ed interfaces.c_streams%s
 D system.ads		20140406181358 5fc8ae56 system%s
@@ -30,8 +34,10 @@ D s-exctab.ads		20140406181354 54135002 system.exception_table%s
 D s-ficobl.ads		20140406181354 078245e4 system.file_control_block%s
 D s-finmas.ads		20140406181356 814daec4 system.finalization_masters%s
 D s-finroo.ads		20140406181358 4ff27390 system.finalization_root%s
+D s-imgint.ads		20140406181358 02dbe0c2 system.img_int%s
 D s-parame.ads		20140406181358 06da98b2 system.parameters%s
 D s-pooglo.ads		20140406181356 542f33d0 system.pool_global%s
+D s-secsta.ads		20140406181358 86a2856d system.secondary_stack%s
 D s-soflin.ads		20140406181358 aa763b52 system.soft_links%s
 D s-stache.ads		20140406181354 a37c21ec system.stack_checking%s
 D s-stalib.ads		20140406181354 fa0a3617 system.standard_library%s
@@ -47,7 +53,9 @@ X 7 a-textio.ads
 49K13*Text_IO 471e16 10|1w10 6r11
 263U14*Put_Line 10|6s19
 X 9 cosc.ads
-1K9*COSC 3l5 3e9 10|3b14 8l5 8t9
+1K9*COSC 4l5 4e9 10|3b14 15l5 15t9
 2U14*Write 2>20 10|4b14 7l8 7t13
 2a20 Message{string} 10|4b20 6r28
+3V13*To_String{string} 3>23 10|9b13 13l8 13t17
+3i23 Value{integer} 10|9b23 12r28
 

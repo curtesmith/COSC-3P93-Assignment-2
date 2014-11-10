@@ -16,14 +16,14 @@ W ada.calendar.conversions%s  a-calcon.adb	a-calcon.ali
 W cosc%s		cosc.adb		cosc.ali
 W system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
 
-U cosc.random%s		cosc-random.ads		d99354e8 EE NE OO PK IU
+U cosc.random%s		cosc-random.ads		3d89e029 EE NE OO PK IU
 W cosc%s		cosc.adb		cosc.ali
 
 D ada.ads		20140406181354 3ffc8e18 ada%s
 D a-calend.ads		20140406181358 d86d6c8c ada.calendar%s
 D a-calcon.ads		20140406181354 81f174bf ada.calendar.conversions%s
 D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
-D cosc.ads		20141023014958 f0b27b77 cosc%s
+D cosc.ads		20141109232606 14a8cfb6 cosc%s
 D cosc-random.ads	20141023002052 29212f9f cosc.random%s
 D cosc-random.adb	20141023004000 a9085ed0 cosc.random%b
 D interfac.ads		20140406181358 69adb1b9 interfaces%s
@@ -45,7 +45,7 @@ X 3 a-calcon.ads
 37K22*Conversions 114e29 7|1w19 37r35
 108V13*To_Unix_Time{9|37I9} 7|37s47
 X 5 cosc.ads
-1K9*COSC 3e9 6|1r9 5r5 7|4r14 50r5
+1K9*COSC 4e9 6|1r9 5r5 7|4r14 50r5
 X 6 cosc-random.ads
 1K14*Random 5|1k9 6|5l10 5e16 7|4b19 50l10 50t16
 2V13*Get_Default_Seed{integer} 3s55 7|6s54 35b13 38l8 38t24 45s20

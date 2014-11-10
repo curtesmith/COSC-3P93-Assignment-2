@@ -19,7 +19,7 @@ W system.img_int%s	s-imgint.adb		s-imgint.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W system.val_int%s	s-valint.adb		s-valint.ali
 
-U cosc.permutations%s	cosc-permutations.ads	6e1aa6bd EE OO PF PK IU
+U cosc.permutations%s	cosc-permutations.ads	8a00127c EE OO PF PK IU
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 Z ada.containers.generic_array_sort%s
@@ -53,7 +53,7 @@ D a-stream.ads		20140406181354 1a984740 ada.streams%s
 D a-tags.ads		20140406181356 dc4d0634 ada.tags%s
 D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
 D a-uncdea.ads		20140406181358 f15a5ed1 ada.unchecked_deallocation%s
-D cosc.ads		20141023014958 f0b27b77 cosc%s
+D cosc.ads		20141109232606 14a8cfb6 cosc%s
 D cosc-permutations.ads	20141023003932 9407e4bf cosc.permutations%s
 D cosc-permutations.adb	20141023003836 eeb3cb87 cosc.permutations%b
 D system.ads		20140406181358 5fc8ae56 system%s
@@ -88,7 +88,7 @@ X 8 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[4|70]>
 X 13 cosc.ads
-1K9*COSC 3e9 14|3r9 15r5 15|3r14 54r5
+1K9*COSC 4e9 14|3r9 15r5 15|3r14 54r5
 X 14 cosc-permutations.ads
 3K14*Permutations 13|1k9 14|15l10 15e22 15|3b19 54l10 54t22
 4I12*Nums_List_Type{positive} 8r21
