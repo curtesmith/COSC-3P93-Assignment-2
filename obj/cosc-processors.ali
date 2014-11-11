@@ -34,7 +34,7 @@ W system.tasking%s	s-taskin.adb		s-taskin.ali
 W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
 W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
-U cosc.processors%s	cosc-processors.ads	a5ea34a9 EE OO PF PK IU
+U cosc.processors%s	cosc-processors.ads	5dacb9ed EE OO PF PK IU
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 W ada.containers.ordered_maps%s
@@ -82,7 +82,7 @@ D a-stream.ads		20140406181354 1a984740 ada.streams%s
 D a-tags.ads		20140406181356 dc4d0634 ada.tags%s
 D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
 D a-uncdea.ads		20140406181358 f15a5ed1 ada.unchecked_deallocation%s
-D cosc.ads		20141109232606 14a8cfb6 cosc%s
+D cosc.ads		20141111022154 ecee42f2 cosc%s
 D cosc-processors.ads	20141110005726 7a46f778 cosc.processors%s
 D cosc-processors.adb	20141110022330 e0b62088 cosc.processors%b
 D cosc-semaphores.ads	20141110005714 3de28a7c cosc.semaphores%s
@@ -132,11 +132,11 @@ X 3 a-coorma.ads
 47k24*Ordered_Maps 377e32 19|1w21 14r40
 53R9*Map<11|43R9> 19|23r29[14]
 240R9 Node_Type
-241P9 Node_Access(240R9)
+241P9 Node_Access(240R9[19|14])
 X 4 a-coorma.adb
-49V13 Color{5|35E9} 8|45i19
+49V13 Color{5|35E9} 8|45i19[19|14]
 52V13 Left{3|241P9} 8|41i19
-55V13 Parent{3|241P9[19|14]} 8|39i19[19|14]
+55V13 Parent{3|241P9} 8|39i19
 58V13 Right{3|241P9} 8|43i19
 61U14 Set_Parent 8|40i19
 64U14 Set_Left 8|42i19[19|14]
@@ -146,11 +146,11 @@ X 12 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[3|68]>
 X 18 cosc.ads
-1K9*COSC 4e9 19|2r6 5r9 28r64 31r5 20|1r6 3r5 5r14 10r21 14r71 22r13 22r34
+1K9*COSC 5e9 19|2r6 5r9 28r64 31r5 20|1r6 3r5 5r14 10r21 14r71 22r13 22r34
 . 22r81 36r16 36r37 37r29 39r16 39r37 39r68 42r16 42r37 47r16 47r37 53r19
 . 53r40 57r16 57r37 57r90 59r16 59r37 59r90 68r5
 2U14*Write 20|22s18 36s21 39s21 42s21 47s21 53s24 57s21 59s21
-3V13*To_String{string} 20|22s39 22s86 36s42 37s34 39s42 39s73 42s42 47s42
+4V13*To_String{string} 20|22s39 22s86 36s42 37s34 39s42 39s73 42s42 47s42
 . 53s45 57s42 57s95 59s42 59s95
 X 19 cosc-processors.ads
 5K14*Processors 18|1k9 19|31l10 31e20 20|5b19 68l10 68t20

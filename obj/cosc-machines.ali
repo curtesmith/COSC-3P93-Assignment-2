@@ -34,7 +34,7 @@ W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
 W system.tasking%s	s-taskin.adb		s-taskin.ali
 W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
-U cosc.machines%s	cosc-machines.ads	2c56dafe EE NE OO PK IU
+U cosc.machines%s	cosc-machines.ads	aa3240ce EE NE OO PK IU
 W cosc%s		cosc.adb		cosc.ali
 W cosc.permutations%s	cosc-permutations.adb	cosc-permutations.ali
 W cosc.processors%s	cosc-processors.adb	cosc-processors.ali
@@ -51,10 +51,10 @@ D a-reatim.ads		20140406181358 63f07669 ada.real_time%s
 D a-stream.ads		20140406181354 1a984740 ada.streams%s
 D a-tags.ads		20140406181356 dc4d0634 ada.tags%s
 D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
-D cosc.ads		20141109232606 14a8cfb6 cosc%s
+D cosc.ads		20141111022154 ecee42f2 cosc%s
 D cosc-machines.ads	20141023014732 d6bf068f cosc.machines%s
 D cosc-machines.adb	20141023014820 e74134df cosc.machines%b
-D cosc-permutations.ads	20141023003932 9407e4bf cosc.permutations%s
+D cosc-permutations.ads	20141111031034 ea25f3cb cosc.permutations%s
 D cosc-processors.ads	20141110005726 7a46f778 cosc.processors%s
 D cosc-semaphores.ads	20141110005714 3de28a7c cosc.semaphores%s
 D interfac.ads		20140406181358 69adb1b9 interfaces%s
@@ -98,7 +98,7 @@ X 8 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[3|68]>
 X 13 cosc.ads
-1K9*COSC 4e9 14|1r6 2r6 4r9 5r43 5r87 6r30 6r67 7r5 15|1r6 2r5 4r14 27r5
+1K9*COSC 5e9 14|1r6 2r6 4r9 5r43 5r87 6r30 6r67 7r5 15|1r6 2r5 4r14 27r5
 X 14 cosc-machines.ads
 4K14*Machines 13|1k9 14|7l10 7e18 15|4b19 27l10 27t18
 5U14*Generate 5=24 5>70 15|5b14 17l8 17t16
@@ -111,7 +111,7 @@ X 15 cosc-machines.adb
 6r7 Empty{3|53R9[17|14]} 13r60
 8i11 Item{integer} 9r39 10r47
 X 16 cosc-permutations.ads
-3K14*Permutations 14|1w11 5r92 15|5r71 16|15e22
+3K14*Permutations 14|1w11 5r92 15|5r71 16|16e22
 6K12*Nums_List[5|45] 14|5r105 15|5r84
 X 17 cosc-processors.ads
 5K14*Processors 14|2w11 5r48 6r35 6r72 15|1w11 2r10 17|31e20

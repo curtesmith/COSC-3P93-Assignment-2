@@ -12,14 +12,14 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U cosc.permutations%b	cosc-permutations.adb	7ab42f38 NE OO PK IU
+U cosc.permutations%b	cosc-permutations.adb	f24aef9f NE OO PK IU
 W ada.tags%s		a-tags.adb		a-tags.ali
 W cosc%s		cosc.adb		cosc.ali
 W system.img_int%s	s-imgint.adb		s-imgint.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W system.val_int%s	s-valint.adb		s-valint.ali
 
-U cosc.permutations%s	cosc-permutations.ads	8a00127c EE OO PF PK IU
+U cosc.permutations%s	cosc-permutations.ads	0c64884c EE OO PF PK IU
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 Z ada.containers.generic_array_sort%s
@@ -53,9 +53,9 @@ D a-stream.ads		20140406181354 1a984740 ada.streams%s
 D a-tags.ads		20140406181356 dc4d0634 ada.tags%s
 D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
 D a-uncdea.ads		20140406181358 f15a5ed1 ada.unchecked_deallocation%s
-D cosc.ads		20141109232606 14a8cfb6 cosc%s
-D cosc-permutations.ads	20141023003932 9407e4bf cosc.permutations%s
-D cosc-permutations.adb	20141023003836 eeb3cb87 cosc.permutations%b
+D cosc.ads		20141111022154 ecee42f2 cosc%s
+D cosc-permutations.ads	20141111031034 ea25f3cb cosc.permutations%s
+D cosc-permutations.adb	20141111031038 186f1c54 cosc.permutations%b
 D system.ads		20140406181358 5fc8ae56 system%s
 D s-exctab.ads		20140406181354 54135002 system.exception_table%s
 D s-finmas.ads		20140406181356 814daec4 system.finalization_masters%s
@@ -82,36 +82,45 @@ X 4 a-convec.ads
 40I9 Index_Type 14|8r7
 41+9 Element_Type 14|7r7
 45k24*Vectors 474e27 14|1w21 6r44
-55R9*Vector<7|43R9> 14|14r116[6] 15|20r71[14|6] 35r117[14|6]
-243U14*Append 15|30s15[14|6]
+55R9*Vector<7|43R9> 14|14r116[6] 15|46r71[14|6] 61r117[14|6]
+243U14*Append 15|56s15[14|6]
 X 8 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[4|70]>
 X 13 cosc.ads
-1K9*COSC 4e9 14|3r9 15r5 15|3r14 54r5
+1K9*COSC 5e9 14|3r9 16r5 15|3r14 23r34 80r5
+4V13*To_String{string} 15|23s39
 X 14 cosc-permutations.ads
-3K14*Permutations 13|1k9 14|15l10 15e22 15|3b19 54l10 54t22
+3K14*Permutations 13|1k9 14|16l10 16e22 15|3b19 80l10 80t22
 4I12*Nums_List_Type{positive} 8r21
-6K12*Nums_List[4|45] 14r106 15|20r61 35r107
-10A9*Int_Nums(integer)<integer> 13r30 13r78 14r66 15|11r30 11r78 20r37 35r67
-12V13*Is_Odd{boolean} 12>20 15|5b13 8l8 8t14 43s17
+6K12*Nums_List[4|45] 14r106 15|46r61 61r107
+10A9*Int_Nums(integer)<integer> 13r30 13r78 14r66 15|11r30 11r78 46r37 61r67
+12V13*Is_Odd{boolean} 12>20 15|5b13 8l8 8t14 69s17
 12i20 I{integer} 15|5b20 7r16
-13V13*Swap{10A9} 13=19 13>40 13>48 15|11b13 18l8 18t12 48s36
+13V13*Swap{10A9} 13=19 13>40 13>48 15|11b13 18l8 18t12 74s36
 13a19 A{10A9} 15|11b19 14r15 15m7 15r25 16m7 17r14
 13i40 Source{integer} 15|11b40 15r27 16r9
 13i48 Destination{integer} 15|11b48 14r17 15r9
-14U14*Build 14>20 14=37 14=76 15|35b14 42s13 51l8 51t13
-14i20 Index{integer} 15|35b21 38r11 41r36 42r19 43r24 48r65
-14a37 Current_Permutation{10A9} 15|35b38 39r22 42m28 48m13 48m41 48r41
-14r76 List_of_permutations{4|55R9[6]} 15|35b77 39m43 42m49
+14U14*Build 14>20 14=37 14=76 15|61b14 68s13 77l8 77t13
+14i20 Index{integer} 15|61b21 64r11 67r36 68r19 69r24 74r65
+14a37 Current_Permutation{10A9} 15|61b38 65r22 68m28 74m13 74m41 74r41
+14r76 List_of_permutations{4|55R9[6]} 15|61b77 65m43 68m49
+15V13*Translate{integer} 15>23 15|21b13 43l8 43t17
+15i23 From{integer} 15|21b23 23r49
 X 15 cosc-permutations.adb
 12i7 Temp{integer} 14m7 16r20
-20U14 Add_to_list 20b14 20>27 20=47 32l8 32t19 39s10
-20a27 Item{14|10A9} 23r26 23r38 26r19 26r31 27r40
-20r47 List{4|55R9[14|6]} 30m10 30r10
-23a10 Result{string} 28m13 30r36
-24a10 To_String{string} 27m13 28r26
-26i14 I{integer} 27r45 28r20
-36i7 X{integer} 44m16 46m16 48r62
-41i14 I{integer} 46r21
+22i7 First{integer} 26m7 30r30 32r50 33r25 37r22
+22i14 Index{integer} 27m7 31r30 32r25 35m10 35r20 36r14 37m13
+22i21 Length{integer} 28m7 35r36
+23a7 From_as_String{string} 28r17 30r37 31r15 32r10 32r35 33r10 42r28
+24e7 C{character} 31m10 33r35
+30i11 i{integer}
+46U14 Add_to_list 46b14 46>27 46=47 58l8 58t19 65s10
+46a27 Item{14|10A9} 49r26 49r38 52r19 52r31 53r40
+46r47 List{4|55R9[14|6]} 56m10 56r10
+49a10 Result{string} 54m13 56r36
+50a10 To_String{string} 53m13 54r26
+52i14 I{integer} 53r45 54r20
+62i7 X{integer} 70m16 72m16 74r62
+67i14 I{integer} 72r21
 

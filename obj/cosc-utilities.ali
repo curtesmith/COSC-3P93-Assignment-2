@@ -22,7 +22,7 @@ W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W system.soft_links%s	s-soflin.adb		s-soflin.ali
 W system.val_int%s	s-valint.adb		s-valint.ali
 
-U cosc.utilities%s	cosc-utilities.ads	a3e6c49b EE NE OO PK IU
+U cosc.utilities%s	cosc-utilities.ads	5ba049df EE NE OO PK IU
 W cosc%s		cosc.adb		cosc.ali
 W cosc.processors%s	cosc-processors.adb	cosc-processors.ali
 
@@ -38,9 +38,9 @@ D a-reatim.ads		20140406181358 63f07669 ada.real_time%s
 D a-stream.ads		20140406181354 1a984740 ada.streams%s
 D a-tags.ads		20140406181356 dc4d0634 ada.tags%s
 D a-unccon.ads		20140406181358 f9eb8f06 ada.unchecked_conversion%s
-D cosc.ads		20141109232606 14a8cfb6 cosc%s
+D cosc.ads		20141111022154 ecee42f2 cosc%s
 D cosc-machines.ads	20141023014732 d6bf068f cosc.machines%s
-D cosc-permutations.ads	20141023003932 9407e4bf cosc.permutations%s
+D cosc-permutations.ads	20141111031034 ea25f3cb cosc.permutations%s
 D cosc-processors.ads	20141110005726 7a46f778 cosc.processors%s
 D cosc-semaphores.ads	20141110005714 3de28a7c cosc.semaphores%s
 D cosc-utilities.ads	20141023014642 cd08fc55 cosc.utilities%s
@@ -84,7 +84,7 @@ X 8 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[3|68]>
 X 13 cosc.ads
-1K9*COSC 4e9 18|1r6 3r9 4r50 5r5 19|1r6 3r14 5r50 19r20 26r5
+1K9*COSC 5e9 18|1r6 3r9 4r50 5r5 19|1r6 3r14 5r50 19r20 26r5
 X 14 cosc-machines.ads
 4K14*Machines 7e18 19|1w11 19r25
 6U14*Connect 19|19s34

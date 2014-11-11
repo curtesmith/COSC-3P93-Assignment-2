@@ -12,4 +12,5 @@ package COSC.Permutations is
    function Is_Odd(I : Integer) return Boolean;
    function Swap (A : in out Int_Nums; Source, Destination : Integer) return Int_Nums;
    procedure Build(Index : Integer; Current_Permutation : in out Int_Nums; List_of_permutations : in out Nums_List.Vector);
+   function Translate(From : in Integer) return Integer;
 end COSC.Permutations;
