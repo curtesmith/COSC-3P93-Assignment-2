@@ -33,7 +33,6 @@ package body COSC.Processors is
             if (Expected_ACKs = 0 and Caller_ID /= -1) then
                Callback_Node.Ptask.ACK;
             elsif (Expected_ACKs = 0 and Are_we_done /= null) then
-               COSC.Write("Node#" & COSC.To_String(Me.ID) & " signal no acks");
                Are_we_done.SIGNAL;
             end if;
 
@@ -43,7 +42,6 @@ package body COSC.Processors is
 
             if (Me.ACKs = Expected_ACKs) then
                if(Are_we_done /= null) then
-                  COSC.Write("Node#" & COSC.To_String(Me.ID) & " signal");
                   Are_we_done.SIGNAL;
                end if;
 

@@ -23,9 +23,7 @@ begin
    First := IDs(COSC.Random.Positive_Integer(Integer(IDs.Length)));
    Second := COSC.Permutations.Translate(First);
 
-   COSC.Write("MAIN: Calling Reset on " & COSC.To_String(First));
    Nodes(First).Ptask.RESET(Nodes(First), -1, DONE_access);
-   COSC.Write("MAIN: Calling Reset on " & COSC.To_String(Second));
    Nodes(Second).Ptask.RESET(Nodes(Second), -1, DONE_access);
 
    DONE_access.WAIT;
