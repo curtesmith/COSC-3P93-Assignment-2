@@ -19,8 +19,6 @@ package body COSC.Processors is
                Are_we_done := Done;
             end RESET;
 
-            COSC.Write("NODE#" & COSC.To_String(Me.ID) & ": RESET called by " & COSC.To_String(Caller_ID));
-
             for Node of Me.Neighbours loop
                if (Node.ID = Caller_ID) then
                   Callback_Node := Node;
@@ -33,18 +31,13 @@ package body COSC.Processors is
             end loop;
 
             if (Expected_ACKs = 0 and Caller_ID /= -1) then
-               COSC.Write("NODE#" & COSC.To_String(Me.ID) & ": I'm going to ack "
-                          & COSC.To_String(Caller_ID) & " back");
                Callback_Node.Ptask.ACK;
-               COSC.Write("NODE#" & COSC.To_String(Me.ID) & ": " & COSC.To_String(Caller_ID)
-                          & " got acked");
             elsif (Expected_ACKs = 0 and Are_we_done /= null) then
                COSC.Write("Node#" & COSC.To_String(Me.ID) & " signal no acks");
                Are_we_done.SIGNAL;
             end if;
 
          or accept ACK do
-               COSC.Write("NODE#" & COSC.To_String(Me.ID) & ": ACK called");
                Me.ACKs := Me.ACKs + 1;
             end ACK;
 
@@ -54,9 +47,7 @@ package body COSC.Processors is
                   Are_we_done.SIGNAL;
                end if;
 
-               COSC.Write("Node#" & COSC.To_String(Me.ID) & ": ACK needs to Callback#" & COSC.To_String(Callback_Node.ID));
                Callback_Node.Ptask.ACK;
-               COSC.Write("Node#" & COSC.To_String(Me.ID) & ": ACK Callback done to #" & COSC.To_String(Callback_Node.ID));
             end if;
 
          or
