@@ -21,7 +21,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 RV MAX_TASKS=1+
 
-U main%b		main.adb		152792e3 NE OO SU
+U main%b		main.adb		32520818 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
@@ -68,7 +68,7 @@ D interfac.ads		20140406181358 69adb1b9 interfaces%s
 D i-c.ads		20140406181358 5421119b interfaces.c%s
 D i-cstrin.ads		20140406181356 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20140406181356 febc86ed interfaces.c_streams%s
-D main.adb		20141111031802 b25d3cbd main%b
+D main.adb		20141114115246 9528a646 main%b
 D system.ads		20140406181358 5fc8ae56 system%s
 D s-atacco.ads		20140406181354 4c36d12f system.address_to_access_conversions%s
 D s-conca3.ads		20140406181354 0b705ca5 system.concat_3%s
@@ -120,8 +120,8 @@ X 13 a-textio.ads
 49K13*Text_IO 471e16 26|1w10
 X 15 cosc.ads
 1K9*COSC 5e9 26|2r6 3r6 4r6 5r6 6r6 7r6 10r12 11r24 12r10 14r18 14r58 16r4
-. 19r4 20r4 23r17 24r14 32r4 34r7 37r4
-2U14*Write 26|32s9 34s12 37s9
+. 19r4 20r4 23r17 24r14 30r4 32r4 34r7 37r4
+2U14*Write 26|30s9 32s9 34s12 37s9
 X 16 cosc-machines.ads
 4K14*Machines 7e18 26|5w11 19r9
 5U14*Generate 26|19s18

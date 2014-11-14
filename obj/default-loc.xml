@@ -1,8 +1,13 @@
 <?xml version="1.0"?>
 <Locations >
   <Project >
-    <file_marker current="true" column=" 14" line=" 35" >
+    <file_marker current="true" column=" 1" line=" 21" >
       <vfs_file>C:\Users\Curtis\Documents\GitHub\COSC-3P93-Assignment-2\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <file_marker current="true" column=" 14" line=" 35">
+      <vfs_file >C:\Users\Curtis\Documents\GitHub\COSC-3P93-Assignment-2\src\main.adb</vfs_file>
     </file_marker>
   </Project>
   <Project >
