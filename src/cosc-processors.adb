@@ -29,8 +29,7 @@ package body COSC.Processors is
                end if;
 
                Number_Of_RESETs := Number_Of_RESETs + 1;
-               --COSC.Write("Node#" & COSC.To_String(Me.ID) & " RESET called, callback Node#"
-               --           & COSC.To_String(Caller) & ", # of RESETs=" & COSC.To_String(Number_Of_RESETs));
+
             end RESET;
 
             if (Number_Of_RESETs = 1) then
@@ -46,26 +45,20 @@ package body COSC.Processors is
                end loop;
 
                if (Expected_ACKs = 0) then
-                  COSC.Write("*** RESET " & COSC.To_String(Me.ID) & "    ACKs=" & COSC.To_String(Me.ACKs));
+                  COSC.Write(COSC.To_String(Me.ID) & "   " & COSC.To_String(Me.ACKs));
 
                   if (Caller_ID /= -1) then
-                  --COSC.Write("Node#" & COSC.To_String(Me.ID) & " RESET with zero ACKS ["
-                  --           & COSC.To_String(Me.ACKs) & "] callback to " & COSC.To_String(Callback_Node.ID));
                      Callback_Node.Ptask.ACK;
                   elsif (Are_we_done /= null) then
-                  --COSC.Write("Node#" & COSC.To_String(Me.ID) & " RESET with zero ACKS [" & COSC.To_String(Me.ACKs) & "] SIGNAL");
                      Are_we_done.SIGNAL;
                   end if;
                end if;
 
             elsif (Number_Of_RESETs > 1) then
                if (Second_done /= null) then
-                  --COSC.Write("Node#" & COSC.To_String(Me.ID) & " RESET # [" & COSC.To_String(Number_Of_RESETs) & "] SIGNAL");
                   Second_done.SIGNAL;
                end if;
                if (Second_callback_node /= null) then
-                  --COSC.Write("Node#" & COSC.To_String(Me.ID) & " RESET # [" & COSC.To_String(Number_Of_RESETs)
-                  --           & "] callback to NODE#" & COSC.To_String(Second_callback_node.ID));
                   Second_callback_node.Ptask.ACK;
                end if;
 
@@ -76,12 +69,10 @@ package body COSC.Processors is
             end ACK;
 
             if (Me.ACKs = Expected_ACKs) then
-               COSC.Write("*** ACK " & COSC.To_String(Me.ID) & "    ACKs=" & COSC.To_String(Me.ACKs));
+               COSC.Write(COSC.To_String(Me.ID) & "   " & COSC.To_String(Me.ACKs));
                if(Are_we_done /= null) then
-                  --COSC.Write("Node#" & COSC.To_String(Me.ID) & " ACK received all ACKS [" & COSC.To_String(Me.ACKs) & "] SIGNAL");
                   Are_we_done.SIGNAL;
                end if;
-               --COSC.Write("Node#" & COSC.To_String(Me.ID) & " ACK received all ACKS [" & COSC.To_String(Me.ACKs) & "]");
                Callback_Node.Ptask.ACK;
             end if;
 
