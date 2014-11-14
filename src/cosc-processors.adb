@@ -20,16 +20,14 @@ package body COSC.Processors is
                   Are_we_done := Done;
                else
                   Second_done := Done;
+
                   for Node of Me.Neighbours loop
                      if (Node.ID = Caller) then
                         Second_callback_node := Node;
                      end if;
                   end loop;
-
                end if;
-
                Number_Of_RESETs := Number_Of_RESETs + 1;
-
             end RESET;
 
             if (Number_Of_RESETs = 1) then
@@ -53,15 +51,14 @@ package body COSC.Processors is
                      Are_we_done.SIGNAL;
                   end if;
                end if;
-
             elsif (Number_Of_RESETs > 1) then
                if (Second_done /= null) then
                   Second_done.SIGNAL;
                end if;
+
                if (Second_callback_node /= null) then
                   Second_callback_node.Ptask.ACK;
                end if;
-
             end if;
 
          or accept ACK do
@@ -70,12 +67,13 @@ package body COSC.Processors is
 
             if (Me.ACKs = Expected_ACKs) then
                COSC.Write(COSC.To_String(Me.ID) & "   " & COSC.To_String(Me.ACKs));
+
                if(Are_we_done /= null) then
                   Are_we_done.SIGNAL;
                end if;
+
                Callback_Node.Ptask.ACK;
             end if;
-
          or
             terminate;
          end select;
